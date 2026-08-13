@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  padding: 9px 15px;
+  border-radius: 5px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f6f8;
+}
+
+.login-card {
+  width: 380px;
+  padding: 35px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-card input {
+  width: 100%;
+  padding: 11px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-card button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  background: #1f2937;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+main {
+  padding: 30px 40px;
+}
+
+.filters {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+.filters div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filters input,
+.filters select {
+  padding: 9px;
+  min-width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 5px;
+}
+
+.message {
+  padding: 50px;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background: #f8fafc;
+}
+
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status.queued {
+  background: #e5e7eb;
+}
+
+.status.processing {
+  background: #fef3c7;
+}
+
+.status.completed {
+  background: #dcfce7;
+}
+
+.status.failed {
+  background: #fee2e2;
+}
+
+td button {
+  margin-right: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+}
